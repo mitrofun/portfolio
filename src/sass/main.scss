@@ -1,0 +1,48 @@
+$base-font-size: 18px;
+$background: #f6f6f6;
+$text: #414141;
+$primary: #32c3e5;
+$secondary: #e85f61;
+
+// plugins
+@import "compass";
+@import "breakpoint";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/utilities/general/clearfix";
+
+// vendor
+@import "normalize";
+@import "susy";
+@import "../vendor/font-awesome/scss/font-awesome";
+
+// abstracts
+@import "abstracts/mixins";
+
+// base
+@import "base/adjustment";
+@import "base/fonts";
+@import "base/grids";
+@import "base/breakpoint";
+@import "base/typography";
+
+
+// layouts
+@import "layout/base";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/navigation";
+@import "layout/content";
+@import "layout/footer";
+
+
+// components
+@import "components/buttons";
+@import "components/socials";
+
+// pages
+@import "pages/common";
+@import "pages/hello";
+@import "pages/about";
+@import "pages/career";
+@import "pages/portfolio";

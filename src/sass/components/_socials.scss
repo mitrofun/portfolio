@@ -1,0 +1,19 @@
+@import "compass/utilities/sprites";
+@import "social/*.png";
+
+@include all-social-sprites;
+
+.social__item {
+  display: inline-block;
+}
+
+.social__link {
+  padding-right: 2px;
+  width: 31px;
+  height: 30px;
+}
+
+.social-sprite {
+  display: block;
+}
+

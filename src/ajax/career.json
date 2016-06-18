@@ -1,0 +1,39 @@
+{
+	"works": [{
+			"ID": null,
+			"year": 2016,
+			"img": "/img/content/career/vyatgu.jpg",
+			"org": "ООО «Звезды путешествий»",
+			"position": "Системный Администратор",
+			"range": "2015 - по настоящее время",
+            "class": "active"
+		},
+
+		{
+			"ID": null,
+			"year": 2015,
+			"img": "/img/content/career/ed.jpg",
+			"org": "Санкт-Петербургский государственный университет",
+			"position": "",
+			"range": "2010 - 2015"
+		},
+
+		{
+			"ID": null,
+			"year": 2014,
+			"img": "/img/content/career/ttgu.jpeg",
+			"org": "Технологический институт им. Горького",
+			"position": "",
+			"range": "2012 - 2014"
+		},
+
+		{
+			"ID": null,
+			"year": 2013,
+			"img": "/img/content/career/vyatgu.jpg",
+			"org": "ООО «Звезды путешествий»",
+			"position": "Помощник руководителя группы разработки",
+			"range": "2015 - по настоящее время"
+		}
+	]
+}

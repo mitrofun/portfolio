@@ -1,0 +1,24 @@
+h1 {
+  font-size: rem(35px);
+  line-height: 1.2;
+  margin: 0;
+
+  @include breakpoint( $max-phone ){
+    margin-top: .5rem;
+  }
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+
+  @include breakpoint( $max-phone ){
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+  }
+}

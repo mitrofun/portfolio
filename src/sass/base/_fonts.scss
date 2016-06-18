@@ -1,0 +1,47 @@
+/*========== fonts ==========*/
+
+@import "compass/css3/font-face";
+
+@include font-face("OpenSansBold", font-files("OpenSansBold/OpenSansBold.woff", "OpenSansBold/OpenSansBold.ttf", "OpenSansBold/OpenSansBold.ttf"), "OpenSansBold/OpenSansBold.eot");
+@include font-face("OpenSansSemiBold", font-files("OpenSansSemiBold/OpenSansSemiBold.woff", "OpenSansSemiBold/OpenSansSemiBold.ttf", "OpenSansSemiBold/OpenSansSemiBold.ttf"), "OpenSansSemiBold/OpenSansSemiBold.eot");
+
+// Косяк в Win 7
+//@include font-face("FiraSansLight", font-files("FiraSansLight/FiraSansLight.woff", "FiraSansLight/FiraSansLight.ttf", "FiraSansLight/FiraSansLight.ttf"), "FiraSansLight/FiraSansLight.eot");
+//@include font-face("FiraSansRegular", font-files("FiraSansRegular/FiraSansRegular.woff", "FiraSansRegular/FiraSansRegular.ttf", "FiraSansRegular/FiraSansRegular.ttf"), "FiraSansRegular/FiraSansRegular.eot");
+//@include font-face("FiraSansBold", font-files("FiraSansBold/FiraSansBold.woff", "FiraSansBold/FiraSansBold.ttf", "FiraSansBold/FiraSansBold.ttf"), "FiraSansBold/FiraSansBold.eot");
+
+
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans/eot/FiraSans-Light.eot');
+    src: local('Fira Sans Light'),
+         url('../fonts/FiraSans/eot/FiraSans-Light.eot') format('embedded-opentype'),
+         url('../fonts/FiraSans/woff/FiraSans-Light.woff') format('woff'),
+         url('../fonts/FiraSans/ttf/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans/eot/FiraSans-Regular.eot');
+    src: local('Fira Sans Regular'),
+         url('../fonts/FiraSans/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('../fonts/FiraSans/woff/FiraSans-Regular.woff') format('woff'),
+         url('../fonts/FiraSans/ttf/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans/eot/FiraSans-SemiBold.eot');
+    src: local('Fira Sans SemiBold'),
+         url('../fonts/FiraSans/eot/FiraSans-SemiBold.eot') format('embedded-opentype'),
+         url('../fonts/FiraSans/woff/FiraSans-SemiBold.woff') format('woff'),
+         url('../fonts/FiraSans/ttf/FiraSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

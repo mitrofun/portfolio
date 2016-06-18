@@ -1,0 +1,73 @@
+.nav {
+  text-align: right;
+  @include breakpoint( $max-tablet ){
+    text-align: left;
+  }
+   @include breakpoint( $max-phone ){
+    font-size: 14px;
+  }
+}
+
+.nav__item {
+  @include breakpoint( $max-tablet ){
+    display: inline-block;
+  }
+  &:last-child {
+    .nav__link {
+      @include breakpoint( $max-tablet ){
+        padding: 10px 0;
+      }
+      @include breakpoint( $max-phone ){
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.nav__item-active {
+  -moz-border-image: -moz-linear-gradient(bottom, #33B7DC 0%, #32C9E9 100%);
+  -webkit-border-image: -webkit-linear-gradient(bottom, #33B7DC 0%, #32C9E9 100%);
+  border-image: -ms-linear-gradient( 90deg, #33B7DC 0%, #32C9E9 100%);
+  border-image-slice: 1;
+  border-right: 6px solid transparent;
+  border-width: 0 6px 0 0;
+
+  @include breakpoint( $max-tablet ){
+    border-right: 0;
+  }
+
+  & .nav__link {
+    @include fira('bold');
+    color: $primary;
+    cursor: default;
+    margin-right: -6px;
+    @include breakpoint( $max-tablet ){
+      margin-right: 0;
+    }
+  }
+}
+
+
+.nav__link {
+  display: block;
+  color: $text;
+  text-decoration: none;
+  padding: 10px 30px 10px 0;
+
+  @include breakpoint( $max-tablet ){
+    display: inline-block;
+  }
+  @include breakpoint( $max-phone ){
+    padding: 10px 14px 10px 0;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.nav__link-ico {
+  @include breakpoint( $max-phone ){
+    display: none;
+  }
+}

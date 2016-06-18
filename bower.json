@@ -1,0 +1,22 @@
+{
+  "name": "markup",
+  "homepage": "https://github.com/mitrofun/portfolio",
+  "authors": [
+    "mitri4 <mitri4@bk.ru>"
+  ],
+  "description": "markup homework1 version2",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "jquery": "^2.2.4",
+    "mustache.js": "mustache#^2.2.1"
+  }
+}

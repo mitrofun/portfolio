@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  @include fira('bold');
+  @include border-radius(40px);
+  border: 2px solid $secondary;
+  padding: 7px 14px 8px 14px;
+  font-size: 14px;
+  color: $secondary;
+  @include transition(0.8s);
+  &:hover {
+    color: #fff;
+    background: $secondary;
+  }
+}
+
+.btn-login {
+  color: #fff;
+  border: 2px solid #fff;
+
+  &:hover {
+    background: #fff;
+    color: $primary;
+  }
+}
+
+.btn-opensans {
+  @include open('bold');
+  padding: 7px 11px 10px 11px;
+}
+
+.btn__ico {
+  font-size: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+}

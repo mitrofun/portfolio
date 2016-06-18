@@ -1,0 +1,59 @@
+@import "breakpoint";
+
+.entrance {
+  text-align: center;
+  background: #fff;
+  margin-top: rem(220px);
+  @include border-radius(10px);
+  @include box-shadow(rgba(#000, 0.3) 0 1px 2px 0);
+  @include span(4);
+  @include push(4);
+
+  @include breakpoint( $max-desktop ){
+    @include span(4);
+    @include push(4);
+  }
+  @include breakpoint( $max-laptop ){
+    @include span(4);
+    @include push(4);
+  }
+  @include breakpoint( $max-tablet ){
+    @include span(8);
+    @include push(2);
+  }
+  @include breakpoint( $max-phone ){
+    @include span(12);
+   }
+}
+
+.person-big{
+
+  .person__avatar {
+    display: block;
+  }
+
+  & .person__img {
+    width: 140px;
+    height: 140px;
+    margin-top: -80px;
+    margin-bottom: 15px;
+  }
+
+  & .person__full-name {
+    width: 40%;
+    @include opensemi('bold');
+    font-size: rem(21px);
+    line-height: 1.333;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+
+.entrance__footer {
+  margin-top: 8px;
+  background: $primary;
+  padding: 25px;
+  @include border-bottom-right-radius(10px);
+  @include border-bottom-left-radius(10px);
+}
+

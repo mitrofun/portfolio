@@ -1,0 +1,24 @@
+.sidebar {
+  @include span(3);
+  @include breakpoint( $max-tablet ){
+    @include span(12);
+    margin-bottom: 1.5rem;
+  }
+  @include breakpoint( $max-phone ){
+    @include span(12);
+    margin-bottom: 12px;
+  }
+
+}
+
+.sidebar_portfolio {
+   @include breakpoint( $max-tablet ){
+    margin-bottom: rem(5px);
+  }
+}
+
+.sidebar_career {
+  @include breakpoint( $max-tablet ){
+    margin-bottom: 0;
+  }
+}

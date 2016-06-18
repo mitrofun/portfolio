@@ -1,0 +1,68 @@
+/*========== mixin fonts ==========*/
+
+@mixin fira($style: regular) {
+  @if $style == regular {
+    font-family: "Fira Sans",  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @if $style == light {
+    font-family: "Fira Sans",  sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  @if $style == bold {
+    font-family: "Fira Sans",  sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+
+@mixin open($style: bold) {
+  @if $style == regular {
+    font-family: "OpenSansRegular",  sans-serif;
+  }
+  @if $style == light {
+    font-family: "OpenSansLight",  sans-serif;
+  }
+  @if $style == bold {
+    font-family: "OpenSansBold",  sans-serif;
+  }
+}
+
+
+@mixin opensemi($style: bold) {
+  @if $style == regular {
+    font-family: "OpenSansSemiRegular",  sans-serif;
+  }
+  @if $style == light {
+    font-family: "OpenSansSemiLight",  sans-serif;
+  }
+  @if $style == bold {
+    font-family: "OpenSansSemiBold",  sans-serif;
+  }
+}
+
+
+@function rem($px) {
+  @return $px / $base-font-size + 0rem;
+}
+
+@mixin contacts-default($color) {
+  color: $color;
+  border-bottom: 2px dotted $color;
+}
+
+@mixin ico-default($padding) {
+  font-size: $base-font-size;
+  padding-right: $padding;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

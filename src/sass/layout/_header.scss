@@ -1,0 +1,179 @@
+/* ---------- header ---------- */
+
+.header {
+  top: 0;
+  position:relative;
+  vertical-align: middle;
+  background: #fff;
+  width: 100%;
+  @include box-shadow(rgba(#000, 0.2) 0 1px 3px 0);
+  line-height: 1.555;
+  margin-bottom: 25px;
+  @include breakpoint( $max-tablet ){
+    margin-bottom: 1rem;
+  }
+  @include breakpoint( $max-phone ){
+    margin-bottom: 0;
+  }
+}
+
+.header__left {
+  @include span(6);
+
+}
+
+.header__right {
+  @include span(6 last);
+  position: relative;
+  @include breakpoint( $max-phone ){
+  position: inherit;
+  }
+
+}
+
+.person {
+  padding-top: 11px;
+  padding-bottom: 8px;
+  font-size: 0;
+}
+
+.person__avatar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.person__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgb(190, 190, 190);
+
+}
+
+.person__full-name {
+  display: inline-block;
+  font-size: rem(18px);
+  padding-left: 20px;
+  vertical-align: middle;
+  width: 60%;
+  @include breakpoint( $max-phone ){
+    width: 42%;
+  }
+}
+
+.contacts {
+  float: right;
+  display: block;
+  padding-top: 31px;
+  @include breakpoint( $max-phone ){ padding-top: 11px }
+}
+
+.contacts__list {
+  @include fira(bold);
+  text-decoration: none;
+  @include contacts-default($primary);
+  @include transition(0.5s);
+
+  @include breakpoint( $max-phone ){
+    font-size: 0;
+    border-bottom: none;
+    &:after {
+      font-family: "FontAwesome";
+      content: '\f095';
+      font-size: 40px;
+      border-bottom: none;
+    }
+  }
+  &:hover {
+    @include contacts-default($secondary);
+
+  }
+  &:active {
+    @include contacts-default($secondary);
+
+  }
+}
+
+.contacts__droupdown {
+  text-align: left;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  margin-top: 15px;
+  right: 0;
+  @include transition(0.3s) ;
+  @include transition-timing-function(ease-in-out);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  @include breakpoint( $max-phone ){
+    margin-top: -5px;
+  }
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 100px;
+    border-right: 6px solid transparent;
+    border-bottom: 11px solid #dedede;
+    border-left: 6px solid transparent;
+    @include breakpoint( $max-phone ){
+      left: 160px;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 101px;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 5px solid transparent;
+    @include breakpoint( $max-phone ){
+      left: 161px;
+    }
+  }
+}
+
+.dropdown__open {
+
+  & .contacts__list{
+    @include contacts-default($secondary);
+    @include breakpoint( $max-phone ){ border-bottom: none }
+  }
+
+  & .contacts__droupdown{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.contacts__dropdown-item {
+  font-size: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+}
+
+.contacts__ico {
+  @include ico-default(10px);
+  color: $primary;
+}
+
+.contacts__link {
+  font-size: $base-font-size;
+  color: $text;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+  }
+
+}

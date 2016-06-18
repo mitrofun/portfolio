@@ -1,0 +1,16 @@
+@import "breakpoint";
+
+html {
+  font-size: $base-font-size;
+  @include breakpoint( $max-phone ){
+    font-size: $base-font-size - 2px ;
+  }
+}
+
+body {
+	@include fira();
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.42;
+	background: $background;
+	color: $text;
+}

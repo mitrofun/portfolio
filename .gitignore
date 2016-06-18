@@ -1,0 +1,6 @@
+/settings.py
+/src/vendor/
+/src/css/
+/.sass-cache/
+/node_modules/
+/bower_components/

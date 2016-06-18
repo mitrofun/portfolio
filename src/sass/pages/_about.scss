@@ -1,0 +1,65 @@
+.about {
+  @extend %clearfix;
+}
+
+.about__img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  width: rem(220px);
+  height: rem(220px);
+
+  @include breakpoint( $max-tablet ){
+    width: rem(165px);
+    height: rem(165px);
+  }
+  @include breakpoint( $max-phone ){
+    width: 134px;
+    height: 134px;
+  }
+}
+
+.about__left {
+  @include push(.65);
+  @include span(4);
+  @include breakpoint( $max-tablet ){
+    @include span(3);
+    @include push(.43);
+  }
+  @include breakpoint( $max-phone ){
+    @include span(12);
+    text-align: center;
+  }
+}
+
+.about__right {
+  @include span(6.6 last);
+  @include breakpoint( $max-tablet ){
+    @include span(8 last);
+  }
+  @include breakpoint( 481px 680px ){
+    @include span(6.5 last);
+  }
+  @include breakpoint( $max-phone ){
+    @include span(12 last);
+  }
+}
+
+.about_description {
+  @include fira('light');
+  overflow: auto;
+  margin-bottom: 60px;
+
+  @include breakpoint( $max-phone ){
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+.about__btn {
+  float: right;
+
+  @include breakpoint( $max-phone ){
+    text-align: center;
+    float: none;
+  }
+}

@@ -1,0 +1,9 @@
+.page-content {
+  @include span(9 last);
+  @include breakpoint( $max-tablet ){
+    @include span(12);
+  }
+  @include breakpoint( $max-phone ){
+    @include span(12);
+  }
+}

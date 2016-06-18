@@ -1,0 +1,37 @@
+/* ---------- footer ---------- */
+
+.footer {
+  background: $text;
+}
+
+.footer__left {
+  @include span(6);
+  @include breakpoint( $max-phone ){
+    @include span(12);
+    text-align: center;
+  }
+}
+
+.copyright {
+  padding: 15px 0;
+  color: #9c9c9c;
+  font-size: 14px;
+}
+
+.footer__right {
+  @include span(6 last);
+  @include breakpoint( $max-phone ){
+    @include span(12);
+  }
+}
+
+.footer__right-items {
+  float: right;
+  padding-top: 10px;
+  @include breakpoint( $max-phone ){
+    @include span(12);
+    float: none;
+    text-align: center;
+    padding-top: 0;
+  }
+}

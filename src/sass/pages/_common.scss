@@ -1,0 +1,16 @@
+.title {
+  @include breakpoint( $max-phone ){
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+.black-white {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.black-white:hover {
+  -webkit-filter: none;
+  filter: none
+}
