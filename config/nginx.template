@@ -17,8 +17,7 @@ server {
 
     location / {
         index index.html;
-        # set 0 non cache
-        expires 0;
+        expires 30d;
         autoindex on;
         client_max_body_size                            32M;
         client_body_buffer_size                         512k;
