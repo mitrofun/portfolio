@@ -1,15 +1,31 @@
 /*========== fonts ==========*/
 
-@import "compass/css3/font-face";
+//@import "compass/css3/font-face";
 
-@include font-face("OpenSansBold", font-files("OpenSansBold/OpenSansBold.woff", "OpenSansBold/OpenSansBold.ttf", "OpenSansBold/OpenSansBold.ttf"), "OpenSansBold/OpenSansBold.eot");
-@include font-face("OpenSansSemiBold", font-files("OpenSansSemiBold/OpenSansSemiBold.woff", "OpenSansSemiBold/OpenSansSemiBold.ttf", "OpenSansSemiBold/OpenSansSemiBold.ttf"), "OpenSansSemiBold/OpenSansSemiBold.eot");
+//@include font-face("OpenSansBold", font-files("OpenSansBold/OpenSansBold.woff", "OpenSansBold/OpenSansBold.ttf", "OpenSansBold/OpenSansBold.ttf"), "OpenSansBold/OpenSansBold.eot");
+//@include font-face("OpenSansSemiBold", font-files("OpenSansSemiBold/OpenSansSemiBold.woff", "OpenSansSemiBold/OpenSansSemiBold.ttf", "OpenSansSemiBold/OpenSansSemiBold.ttf"), "OpenSansSemiBold/OpenSansSemiBold.eot");
 
-// Косяк в Win 7
-//@include font-face("FiraSansLight", font-files("FiraSansLight/FiraSansLight.woff", "FiraSansLight/FiraSansLight.ttf", "FiraSansLight/FiraSansLight.ttf"), "FiraSansLight/FiraSansLight.eot");
-//@include font-face("FiraSansRegular", font-files("FiraSansRegular/FiraSansRegular.woff", "FiraSansRegular/FiraSansRegular.ttf", "FiraSansRegular/FiraSansRegular.ttf"), "FiraSansRegular/FiraSansRegular.eot");
-//@include font-face("FiraSansBold", font-files("FiraSansBold/FiraSansBold.woff", "FiraSansBold/FiraSansBold.ttf", "FiraSansBold/FiraSansBold.ttf"), "FiraSansBold/FiraSansBold.eot");
+@font-face{
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans/eot/OpenSans-Bold.eot');
+    src: local('Open Sans Bold'),
+         url('../fonts/OpenSans/eot/OpenSans-Bold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/woff/OpenSans-Bold.woff') format('woff'),
+         url('../fonts/OpenSans/ttf/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
+@font-face{
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans/eot/OpenSans-SemiBold.eot');
+    src: local('Open Sans SemiBold'),
+         url('../fonts/OpenSans/eot/OpenSans-SemiBold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/woff/OpenSans-SemiBold.woff') format('woff'),
+         url('../fonts/OpenSans/ttf/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 
 @font-face{
