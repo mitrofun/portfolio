@@ -78,6 +78,10 @@ def update(user=USER, pas=PASS):
     env.password = pas
     with cd(PROJECT_DIR):
         run('git pull origin master')
+        run('npm i')
+        run('bundle install')
+        run('gulp clean')
+        run('gulp prod')
     reload()
 
 
